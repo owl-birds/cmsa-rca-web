@@ -1,0 +1,13 @@
+@use "../../../scss-global/colors";
+@use "../../../scss-global/general";
+.home {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  .link {
+    @include general.link-default;
+  }
+  .link:hover {
+    @include general.link-default-hover;
+  }
+}

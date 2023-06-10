@@ -1,0 +1,44 @@
+@use "../../../scss-global/colors";
+
+.drop_box {
+  display: grid;
+  justify-items: center;
+  .drop_zone {
+    min-width: 200px;
+    height: 200px;
+    padding: 25px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: colors.$font-color;
+    border: 4px dashed colors.$font-color;
+    border-radius: 30px;
+    margin: 30px;
+    font-weight: 701;
+    .drop_input {
+      display: none;
+    }
+  }
+  .drop_zone:hover {
+    transition: 300ms;
+    color: colors.$main-color;
+    background-color: colors.$hover-color;
+  }
+  .file_hover {
+    transition: 300ms;
+    color: colors.$main-color;
+    background-color: colors.$hover-color;
+  }
+  .file_not_allowed {
+    transition: 300ms;
+    color: colors.$warning-color;
+    border-color: colors.$warning-color;
+  }
+  .file_selected {
+    transition: 300ms;
+    color: colors.$main-color;
+    background-color: colors.$hover-color;
+  }
+}

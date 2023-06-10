@@ -1,0 +1,51 @@
+@use "scss-global/colors";
+// fonts
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+
+html {
+  // background-color: #d9d9d9;
+  // background-color: #090011;
+  background-color: colors.$main-color;
+  color: colors.$font-color;
+  font-family: "Montserrat-regular";
+  scroll-behavior: smooth;
+}
+html,
+body,
+#app {
+  min-width: 100%;
+  min-height: 100%;
+}
+html,
+body,
+div,
+main,
+section,
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  .btn_default {
+    font-weight: 700;
+    padding: 10px;
+    // color: rgb(62, 62, 63);
+    color: colors.$main-color;
+    background-color: colors.$font-color;
+    border-radius: 10px;
+    border: 0.5px solid colors.$secondary-color;
+    margin: 20px;
+  }
+  .btn_default:hover {
+    transition: 300ms;
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+  }
+}

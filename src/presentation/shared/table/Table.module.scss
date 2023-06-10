@@ -1,0 +1,91 @@
+@use "../../../scss-global/colors";
+
+.table_box {
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  max-width: 95%;
+  .table_control {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: 10px;
+    gap: 1rem;
+    .btn_control {
+      margin: 0;
+    }
+    .add_column_wrapper {
+      justify-self: center;
+      .btn_add_column {
+        margin: 0;
+        //
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .input_add_column {
+        font-weight: 700;
+        padding: 10px;
+        color: rgb(62, 62, 63);
+        background-color: #fff;
+        border-radius: 5px;
+        border: 0.5px solid rgb(62, 62, 63);
+        //
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .input_add_column:focus {
+        outline: none;
+      }
+    }
+  }
+  .table_wrapper {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    // overflow: hidden;
+    max-height: 600px;
+    max-width: 100%;
+    padding-bottom: 10px;
+    // padding-right: 100px;
+    border: 1px solid colors.$secondary-color;
+    .table {
+      padding: 10px;
+      border-collapse: collapse;
+      // width: 70%;
+      td,
+      th {
+        border: 1px solid colors.$secondary-color;
+        text-align: left;
+        padding: 5px;
+      }
+      thead {
+        tr {
+          background-color: colors.$third-color;
+          color: colors.$main-color;
+        }
+      }
+      // tr:nth-child(even) {
+      //   background-color: #dddddd;
+      // }
+      // tbody {
+      //   // overflow-y: hidden;
+      //   // overflow-x: auto;
+      // }
+    }
+  }
+  // hiding scrollbar
+  // chrome safari opera
+  // .table_wrapper::-webkit-scrollbar {
+  //   display: none;
+  // }
+  // .table_wrapper {
+  //   -ms-overflow-style: none; /* IE and Edge */
+  //   scrollbar-width: none; /* Firefox */
+  // }
+
+  .silent_a {
+    display: none;
+  }
+}

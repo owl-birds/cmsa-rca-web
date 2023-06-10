@@ -1,0 +1,22 @@
+.cell {
+  width: fit-content;
+  text-align: left;
+  padding: 0px 5px;
+  font-size: 0.9rem;
+  border: none;
+}
+.cell_span {
+  // width: fit-content;
+  text-align: left;
+  // padding: 0px 5px;
+  font-size: 0.9rem;
+  border: none;
+  // width: 100%;
+  height: 100%;
+}
+.cell_span:hover {
+  cursor: pointer;
+}
+.cell_align_right {
+  text-align: right;
+}

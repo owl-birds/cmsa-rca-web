@@ -1,0 +1,134 @@
+@use "../../../scss-global/colors";
+.main_app {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 1rem;
+  section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    .section_title {
+      width: 100%;
+      display: flex;
+      margin: 20px 0;
+      div {
+        border-bottom: 1px solid colors.$secondary-color;
+        width: 100%;
+      }
+    }
+
+    // METHOD
+    .method_selection {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      div {
+        display: flex;
+        gap: 0.25rem;
+        span {
+          justify-self: center;
+          align-self: center;
+        }
+      }
+    }
+    .method_informations_box {
+      margin: 10px 0;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: column;
+      .info_toggle {
+        padding: 5px 10px;
+        width: fit-content;
+        display: flex;
+        gap: 0.2rem;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid colors.$main-color;
+        img {
+          width: 20px;
+        }
+      }
+      .info_toggle:hover {
+        border-radius: 5px;
+        transition: 1000ms;
+        border: 1px solid colors.$secondary-color;
+        cursor: pointer;
+      }
+    }
+    .method_options {
+      border: 1px solid colors.$secondary-color;
+      border-radius: 10px;
+      padding: 20px 15px;
+      padding-top: 10px;
+      //
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 1rem;
+      .year_options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        .year_box {
+          display: flex;
+          justify-content: center;
+          gap: 0.25rem;
+        }
+      }
+      .btn_box {
+        width: fit-content;
+        justify-self: center;
+        align-self: center;
+        button {
+          margin: 0;
+        }
+      }
+    }
+    .output_box {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+    // .data {
+    //   margin: 20px 0;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   .data_menu {
+    //     width: fit-content;
+    //     margin-bottom: 5px;
+    //     button {
+    //       margin: 0;
+    //       border-radius: 0;
+    //       background-color: colors.$main-color;
+    //       color: colors.$font-color;
+    //     }
+    //     button:hover {
+    //       transition: 300ms;
+    //       background-color: colors.$font-color;
+    //       color: colors.$main-color;
+    //       cursor: pointer;
+    //     }
+    //   }
+    //   // .display_data {
+    //   // width: fit-content;
+    //   // }
+    // }
+  }
+}

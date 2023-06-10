@@ -1,0 +1,9 @@
+.select_box {
+  width: fit-content;
+  select {
+    padding: 5px 15px;
+  }
+  select:hover {
+    cursor: pointer;
+  }
+}
